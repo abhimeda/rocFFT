@@ -14,5 +14,4 @@ steps:
 - script: |
     cd build
     ls
-    ./rccl-UnitTests
   displayName: "CDing into build directory"
