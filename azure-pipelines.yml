@@ -8,10 +8,13 @@ steps:
     mkdir build
 
 - script: |
-    echo "rocm" | sudo -S ./install.sh -c -d
+    echo "rocm" | sudo -S ./install.sh -i -c -d
   displayName: "Building rocFFT with the install script"
 
 - script: |
     cd build
     ls
+    ./rccl-UnitTests
   displayName: "CDing into build directory"
+
+
